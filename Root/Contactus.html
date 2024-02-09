@@ -1,0 +1,197 @@
+<!DOCTYPE html> <!--Declares document type-->
+
+<html> <!--Contains all HTML-->
+    <head><!--backend-->
+        <title>Contact us</title> <!--Page title-->
+
+        <!--External links-->
+        <link rel="stylesheet" href="CSS/MainStyling.css" type="text/css"> <!--CSS-->
+
+        <!-- Boostrap 4 CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <!-- Boostrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+        <!--Meta data-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+        <meta author=" Samantha Dejah Kitchener"> <!--your name here-->
+        <meta description=" A tradiotional Japanese restuarant  "> <!--small disription of website-->
+
+        <meta keywords=" restuarant, Japanese, traditional, yummy food, noodles, ramen "> <!--keywords describing the website-->
+    </head>
+
+
+    <body id="BG"> <!--Front end-->
+        
+        <header>
+                        <!--font family import-->
+                        <link rel="preconnect" href="https://fonts.googleapis.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+            <nav role="navigation">
+                
+                        
+                <div id="menuToggle">
+                
+                
+                 <input type="checkbox" />
+    
+                    <!--
+                    Some spans to act as a hamburger.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                    
+                    
+                    <ul id="menu">
+                    <a href="Index.html"><li>Home</li></a>
+                    <a href="Menu.html"><li>Our Menu</li></a>
+                    <a href="Contactus.html"><li>Contact us</li></a>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-md-12 text-center" >               
+                        <div class="Logo"> 
+                            <!-- Logo -->
+                            <img src="Media/Icons/Logo.png" width="190" alt="Logo" >
+                            
+    
+                        </div>
+                    
+                    </div>  
+                </div>
+            </div> 
+        
+        </header>
+        <br>
+        
+        <main >
+            
+           <section class="contact-page-section">
+            <div class="container">
+                <div class="sec-title">
+                    <div class="title">Please feel free to contact Us</div>
+                    <h2>We would love to hear from you!</h2>
+                </div>
+            </div>
+
+            <div class="inner-container">
+              <div class="row clearfix">
+                
+                  <!--Form Column-->
+                    <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                      <div class="inner-column">
+                          
+                            <!--Contact Form-->
+                            <div class="contact-form">
+                                <form method="post" action="sendemail.php" id="contact-form">
+                                    <div class="row clearfix">
+                                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                            <input type="text" name="name" value="" placeholder="Name" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                            <input type="email" name="email" value="" placeholder="Email" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                            <input type="text" name="subject" value="" placeholder="Subject" required>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                            <input type="text" name="phone" value="" placeholder="Phone" required>
+                                        </div>
+                                        <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                            <textarea name="message" placeholder="Massage"></textarea>
+                                        </div>
+                                        <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                            <button type="submit" class="theme-btn btn-style-one">Send Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--End Contact Form-->
+                            
+                        </div>
+                    </div>
+                    
+                    <!--Info Column-->
+                    <div class="info-column col-md-4 col-sm-12 col-xs-12">
+                      <div class="inner-column">
+                          <h2>Contact Info</h2>
+                            <ul class="list-info">
+                              <li><i class="fas fa-globe"></i>This is the restuarants address.</li>
+                                <li><i class="far fa-envelope"></i>Kuchibishii.Email.com</li>
+                                <li><i class="fas fa-phone"></i>082-000-0000 <br> 011-000-0000 </li>
+                            </ul>
+                            <h4>
+                            Please note that we are only taking orders online over the phone at the moment.
+                            </h4>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+        </main>
+        
+        <br><br><br><hr>
+
+        <footer >
+
+            <div class="container-fluid">
+                <div class="row">
+                      
+                
+                    <div class="col-md-4">
+                        <div>
+                            <h3>Kuchisabishii</h3>
+                           <p>
+                                "You eat not becuase you are hungry,
+                                but because your mouth is lonely."
+                                <!--small one setence deiscription of website-->
+                                <br><br>
+                                2023 © Kuchisabishi<!--site name here--> Ltd.
+                           </p>
+                        </div>
+                    </div>       
+
+                    <div class="col-md-4 footer-links">
+                    
+                          <div class="Logo"> 
+                            <!-- Logo -->
+                            <img src="Media/Icons/Logo.png" width="190" alt="Logo" >
+                            
+    
+                        </div>
+                    </div>    
+
+                    <!--Social media-->
+                    <div class="col-md-4">
+                        <div class="social-menu">
+                            <h3>Follow us</h3>
+                            <br><br><br><br><br>
+                            <ul>
+                                <li><a href="https://www.facebook.com" target="_blank"><img src="Media/Icons/facebook.png" alt="Facebook"></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><img src="Media/Icons/insta.png" alt="Instagram"></a></li>
+                                <li><a href="https://www.whatsapp.com/" target="_blank"><img src="Media/Icons/whatsapp.png" alt="Instagram"></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+            
+        </footer>
+    </body>
+</html>
